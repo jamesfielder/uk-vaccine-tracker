@@ -13,7 +13,7 @@ const s: Array<string> = htmlRead(text);
 const current: Array<any> = await readJSON(sentencesPath);
 
 current.push({
-    sentences: s,
+    sentences: [...s],
     datetime: format(new Date(), "yyyy-MM-dd HH:mm:ss")
 });
 
