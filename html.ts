@@ -6,15 +6,13 @@ export function htmlRead(page: string): Array<string> {
     // console.log(page);
     const $ = cheerio.load(page);
 
-    // const read = 
-
     let out: Array<string> = []
     
     $('#maincontent > article > div > div > section:nth-child(2) > ul > li').each(function(i, elm) {
         out.push($(elm).text());
-    });;
+    });
 
-    console.log(out);
+    // console.log(out);
 
-    return [];
+    return out;
 }
