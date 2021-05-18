@@ -17,4 +17,4 @@ current.push({
     datetime: format(new Date(), "yyyy-MM-dd HH:mm:ss")
 });
 
-await writeJSON(current, sentencesPath);
+await writeJSON(sentencesPath, current);
