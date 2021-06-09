@@ -20,4 +20,3 @@ jobs:
         with:
           http_url: https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/
           downloaded_filename: data.html
-          postprocess: ./postprocess.ts
